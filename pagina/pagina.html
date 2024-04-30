@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo Moda</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#quienes-somos">Quienes Somos</a></li>
+            <li><a href="#catalogo">Catálogo</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="#satisfaccion">Satisfacción</a></li>
+        </ul>
+    </nav>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <section id="home">
+        <h2>Bienvenidos a nuestra tienda de ropa</h2>
+        <p>Descubre una amplia variedad de prendas de moda para mujeres de todas las edades y estilos.</p>
+        <p>¡Explora nuestro catálogo y encuentra el look perfecto para ti!</p>
+    </section>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <section id="quienes-somos">
+        <h2>¿Quiénes somos?</h2>
+        <p>Nosotros somos una tienda de ropa de mujer comprometida en ofrecer moda de alta calidad y estilo único para mujeres de todas las edades y estilos. Nuestra misión es inspirar confianza y empoderamiento a través de prendas que reflejen la belleza y la personalidad de cada cliente. Con una cuidadosa selección de diseños modernos y atemporales, buscamos ser el destino preferido para mujeres que valoran la calidad, la elegancia y la comodidad en su vestuario. ¡Bienvenidas a nuestra comunidad de moda!</p>
+    </section>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div id="catalogo">
+        <div class="prenda">
+            <img src="img/polera.png" alt="Polera basica">
+            <h2>Polera blanca</h2>
+            <p>Precio: $13990</p>
+            <p>Talla: S</p>
+            <p>Descripción: Polera de algodón suave y blanca.</p>
+            <button onclick="agregarAlCarrito('Polera basica', 13990)">Agregar al carrito</button>
+        </div>
+
+        <div class="prenda">
+            <img src="img/pantalon.png" alt="Pantalon jeans pitillo">
+            <h2>Jeans azul lavado medio</h2>
+            <p>Precio: $25990</p>
+            <p>Talla: M</p>
+            <p>Descripción: Pantalón de algodón elasticado.</p>
+            <button onclick="agregarAlCarrito('Pantalon jeans pitillo', 25990)">Agregar al carrito</button>
+        </div>
+
+        <div class="prenda">
+            <img src="img/poleron.png" alt="Poleron overzise">
+            <h2>Polerón negro</h2>
+            <p>Precio: $41990</p>
+            <p>Talla: M</p>
+            <p>Descripción: Polerón oversize cómodo y suave.</p>
+            <button onclick="agregarAlCarrito('Poleron oversize', 41990)">Agregar al carrito</button>
+        </div>
+    </div>
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p>Nuestros contactos son:</p>
+        <p>Gmail: <a href="mailto:Todomoda@gmail.com">Todomoda@gmail.com</a></p>
+        <p>Teléfono: (2) 2345 7865</p>
+    </section>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <section id="satisfaccion">
+        <h2>Satisfaccion</h2>
+        <form id="formulario-opinion" action="gracias.html" method="post"> 
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required><br><br>
+            <label for="opinion">Opinión:</label><br>
+            <textarea id="opinion" name="opinion" rows="4" cols="50" required></textarea><br><br>
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
+
+    <div id="carrito">
+        <h2>Carrito</h2>
+        <ul id="lista-carrito">
+        </ul>
+        <button onclick="hacerCompra()">Hacer compra</button>
+        <button onclick="mostrarBoleta()">Ver boleta</button>
+    </div>
+
+    <div id="boleta">
+        <h2>Boleta</h2>
+        <p id="total"></p>
+        <button onclick="cerrarBoleta()">Cerrar</button>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h2>MEDIDAS</h2>
+    <table>
+        <tr>
+            <th>Polera</th>
+            <th>Pantalón</th>
+            <th>Polerón (Oversize)</th>
+        </tr>
+        <tr>
+            <td>Talla S: 66cm - 70cm</td>
+            <td>Talla M: 70cm - 82cm</td>
+            <td>Talla M: 88cm - 95cm</td>
+        </tr>
+    </table>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="ver-mas">
+        <a href="https://cl.todomoda.com">AQUÍ PARA VER MÁS PRODUCTOS</a>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="sucursal">
+        <h2>Sucursales</h2>
+        <ul>
+            <li>Vicuña Mackenna Oriente 7110 La Florida · (2) 2571 2870</li>
+            <li>Avenida Camilo Henríquez 3296 Local D-133, Puente Alto, Región Metropolitana Chile · (2) 2827 9602</li>
+            <li>Av. Concha Y Toro 1149 Local A-11 Puente Alto Región Metropolitana Chile · (2) 2344 8732</li>
+            <li>Mar Tirreno 3349 Local 2002-2004, Penalolen, Región Metropolitana, Chile · (2) 2912 9047</li>
+        </ul>
+    </div>
+
+    <script>
+        //almacenará los elementos seleccionados para comprar
+        let carrito = [];
+    
+        //función para agregar un producto al carrito
+        function agregarAlCarrito(nombre, precio) {
+            //agrega el producto al array del carrito
+            carrito.push({ nombre: nombre, precio: precio });
+            //actualiza visualmente el contenido del carrito
+            actualizarCarrito();
+        }
+    
+        //Bueno aqui en esta parte pasa lo siguiente:
+        //actualiza el contenido del carrito
+        //limpia el contenido que existe en el carrito, dando el total de la compra.
+        //repite los productos en el carrito, cada producto añadido los ordena como lista
+        //asigna el nombre y el precio del producto en el carrito,
+        //suma el precio del producto al total de la compra y despues actualiza el elemento HTML con el total de la compra
+        function actualizarCarrito() {
+            const listaCarrito = document.getElementById('lista-carrito');
+            listaCarrito.innerHTML = '';
+            let total = 0;
+            carrito.forEach(prenda => {
+                const item = document.createElement('li');
+                item.textContent = `${prenda.nombre} - $${prenda.precio}`;
+                listaCarrito.appendChild(item);
+                total += prenda.precio;
+            });
+            document.getElementById('total').textContent = `Total: $${total}`;
+        }
+    
+        //Aqui se crea la compra
+        function hacerCompra() {
+            // Aquí se envian los datos del carro para procesar la compra
+            // solo muestra mensaje de "compra realizada con éxito"
+            alert('Compra realizada con éxito!');
+            // Elimina todas las cosas del carrito después de la compra
+            carrito = [];
+            // Actualiza los productos del carrito
+            actualizarCarrito();
+        }
+    
+        // Función para mostrar la boleta
+        function mostrarBoleta() {
+            document.getElementById('boleta').style.display = 'block';
+        }
+    
+        // Función para cerrar la boleta
+        function cerrarBoleta() {
+            document.getElementById('boleta').style.display = 'none';
+        }
+    </script>
+</body>

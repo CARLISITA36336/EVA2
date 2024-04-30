@@ -1,0 +1,60 @@
+body {
+    background-image: url('img/fondo.png');
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+#catalogo {
+    display: flex;
+    justify-content: center;
+}
+
+.prenda {
+    margin: 20px;
+}
+
+#carrito {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: pink;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#boleta {
+    display: none;
+    background-color: lavender;
+    padding: 20px;
+    border-radius: 10px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.ver-mas {
+    text-align: center;
+    margin-top: 20px;
+}
+#gracias {
+    text-align: center;
+    margin-top: 100px;
+}
